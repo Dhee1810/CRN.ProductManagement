@@ -78,7 +78,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ProductService>();
-
+builder.Services.AddScoped<TokenService>();
 builder.Services.AddValidatorsFromAssemblyContaining<
     CRN.ProductManagement.Application.Validators
     .CreateProductRequestValidator>();
